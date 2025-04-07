@@ -21,3 +21,4 @@ test ('DemoTest' , async ({page}) => {
     //now I am testing webpage frame size of 1920x1080
     //Take a screenshot of the page and save it in the folder
     await page.screenshot({path: './Screenshots/screenshot.png'});
+});
