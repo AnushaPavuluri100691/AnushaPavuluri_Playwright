@@ -29,6 +29,7 @@ test ('Validate error' , async ({page}) => {
 
 
     // Step 4: Populate mandatory fields
+    // Step 5: Verify error messages disappear
     // Fill in the mandatory fields with valid data
     await page.locator('input[placeholder="John"]').fill('Anusha');
     await expect(page.locator('text=Forename is required')).toBeHidden();
