@@ -39,12 +39,4 @@ test ('Validate error' , async ({page}) => {
     await page.locator('textarea[placeholder="Tell us about it.."]').fill('Trying to enter a message');
     await expect(page.locator('text=Message is required')).toBeHidden();
     
-    // Wait for a short time to ensure the fields are populated
-    await page.waitForTimeout(5000);
-
-    // Step 5: Validate errors are gone
-
-    // Click the submit button again
-    await page.locator('//a[@class="btn-contact btn btn-primary"]').click();
-
-})
+});
